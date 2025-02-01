@@ -1,0 +1,9 @@
+﻿create table employeeinfo(id int, ename varchar(20), salary int, username varchar(20), password varchar(20));
+
+insert into employeeinfo values(2004, 'saurabh', 56000, 'saurabh@gmail.com', 'sau123');
+
+SELECT * FROM employeeinfo e;
+
+create view emp_view as select id, ename, salary from employeeinfo;
+
+                             SELECT * FROM emp_view e;

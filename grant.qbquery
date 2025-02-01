@@ -1,0 +1,11 @@
+﻿use test51;
+
+create user 'expo' identified by 'expo';
+
+show grants for 'expo';
+
+select * from employee ;
+
+grant select on employee to 'expo';
+
+show grants for 'expo';

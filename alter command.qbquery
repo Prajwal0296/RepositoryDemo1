@@ -1,0 +1,45 @@
+﻿use test51;
+
+create table student(id int, name varchar(30), address varchar(30));
+
+select * from student;
+
+desc student;
+
+alter table student
+ADD column age int;
+
+desc student;
+
+alter table student
+drop column address;
+
+desc student;
+
+alter table student
+modify column name int;
+
+desc student;
+
+alter table student rename staff;
+
+desc staff;
+
+alter table staff
+modify column name varchar(30);
+
+desc staff;
+
+alter table staff
+ADD column pancard varchar(30);
+
+desc staff;
+
+alter table staff
+modify column pancard int;
+
+desc staff;
+
+alter table staff rename student;
+
+desc student;
