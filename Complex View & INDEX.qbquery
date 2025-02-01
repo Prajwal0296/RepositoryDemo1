@@ -1,0 +1,23 @@
+﻿###COMPLEX VIEW
+
+SELECT * FROM customer c;
+
+SELECT * FROM product p;
+
+create view customerproduct_view as
+select product.productname, product.price, customer.cid, customer.cname
+from product inner join customer
+on product.customerid = customer.cid;
+
+
+SELECT * FROM customerproduct_view c;
+
+## INDEX
+
+show index from customer;
+
+show index from product;
+
+create index price_index on product(price);
+
+show index from product;
