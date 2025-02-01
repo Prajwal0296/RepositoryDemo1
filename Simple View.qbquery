@@ -7,3 +7,7 @@ SELECT * FROM employeeinfo e;
 create view emp_view as select id, ename, salary from employeeinfo;
 
                              SELECT * FROM emp_view e;
+
+desc employeeinfo;
+
+select * from employeeinfo;
